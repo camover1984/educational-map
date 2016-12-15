@@ -26,16 +26,19 @@
   <!-- Open info window when clicked -->
   <info-window id="newCamera">
     <div ng-non-bindable="">
-      <div style="display:none;" id="thankyou_message">
-        <h2>Thanks for your submission</h2>
-      </div>
-        <form name ="addForm" novalidate>
+      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzoRSMAZG7NvkV7pqXZQqLeoWHI-d1FpQs4ExQKYM2qzWp5Uwo/exec">
             <div class="form-group">
               <label for="info">Info </label>
                 <textarea name="info" cols="40" rows="5" type="text" class="form-control" id="info" placeholder="useful information" ng-model="vm.formData.info"></textarea>
             </div>
+
+            <div class="form-group">
+                <label for="lat/lng">Put {{vm.lat}} {{vm.lng}} below</label>
+                <input type="text" name="lat" id="lat" class="form-control" placeholder="{{vm.lat}}" />
+                <input type="text" name="lng" id="lng" class="form-control" placeholder="{{vm.lng}}" />
+            </div>
             <!-- Submit button.-->
-            <button type="submit" class="btn btn-danger btn-block" ng-click="vm.createNewCamera()">Add Camera</button>
+            <button type="submit" class="btn btn-danger btn-block">Add Camera</button>
         </form>
     </div>
   </info-window>
