@@ -5,7 +5,56 @@
     function(NgMap, cameraService, $window) {
 
     var vm = this;
-    vm.cameras = [];
+    vm.cameras = [
+{
+    "_id": {
+        "$oid": "585c30434da5bfb41e84ab0f"
+    },
+    "username": "papa foucault",
+    "position": [
+        "35.5942",
+        "-82.5544"
+    ],
+    "rating": null,
+    "info": "points across parking lot towards construction site",
+    "voted": [
+        "papa foucault"
+    ]
+},
+{
+    "_id": {
+        "$oid": "585c306e4da5bfb41e84ab10"
+    },
+    "username": "papa foucault",
+    "position": [
+        "35.5943",
+        "-82.5539"
+    ],
+    "rating": null,
+    "info": "two in proximity. \"building under surviellence\" sign",
+    "voted": [
+        "papa foucault"
+    ]
+},
+      {
+    "_id": {
+        "$oid": "585c30c64da5bfb41e84ab11"
+    },
+    "username": "papa foucault",
+    "position": [
+        "35.5947",
+        "-82.5539"
+    ],
+    "rating": null,
+    "info": "looking east on patton",
+    "voted": [
+        "papa foucault"
+    ]
+}
+      
+      
+      
+    ];
 
     // Display map
     NgMap.getMap().then(function(map) {
@@ -14,9 +63,9 @@
 
 
     // Populate map with cameras
-    cameraService.getCameras().then(function(data) {
-      vm.cameras.push(data);
-    });
+//     cameraService.getCameras().then(function(data) {
+//       vm.cameras.push(data);
+//     });
 
 
     // Show info window on click
