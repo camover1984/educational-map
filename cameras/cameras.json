@@ -4,4 +4,13 @@
   "votes": 0,
   "position":[35.578417406101444,-82.58751153945923],
   "info": "two cameras. one on east side of building facing away from haywood. the other is along the storefront facing west down haywood."
+}, 
+{
+    "_id": {
+        "$oid": "5834c3512675451d30117b97"
+    },
+    "username": "crash",
+    "email": "ccrsh@riseup.net",
+    "verified": true,
+    "hash": "$2a$10$N/nWIpm5rKO.RfmMIND6sugzXWyIWnu7Rzr0Mm3BrvHOdPDEQ2f0S"
 }
