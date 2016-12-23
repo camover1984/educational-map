@@ -71,7 +71,7 @@
     // Show info window on click
     vm.showDetail = function(e, camera) {
       vm.camera = camera;
-      vm.map.showInfoWindow('camera', camera._id);
+      vm.map.showInfoWindow('camera', this);
     };
 
     // Open info window upon click
